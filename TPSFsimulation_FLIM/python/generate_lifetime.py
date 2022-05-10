@@ -7,9 +7,9 @@ def generate_lifetime(image = None):
     n = image.shape[2-1]
     #     Create randomly generated value matrices for the tau1 and tau2
 #     thresholds of interest.
-    tau1 = np.random.rand(m,n) * 0.3 + 0.2
+    tau1 = np.random.rand(m,n) * 0.4 + 0.2
     
-    tau2 = np.random.rand(m,n) * 1 + 2
+    tau2 = np.random.rand(m,n) * 0.5 + 1
     
     tau1 = np.multiply(tau1,image)
     tau2 = np.multiply(tau2,image)

@@ -6,7 +6,7 @@ def generate_intensity(image = None):
     n = image.shape[2-1]
     #     random matrix of intensity values possessing values within maximum
 #     photon count threshold.
-    int1 = np.random.rand(m,n) * 250 + 50
+    int1 = np.random.rand(m,n) * 70 + 22
     
     intensity = np.multiply(int1,image)
     return intensity
