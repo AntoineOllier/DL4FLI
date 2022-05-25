@@ -8,7 +8,8 @@ def generate_tpsfs(intensity = None,tau1 = None,tau2 = None,ratio = None,irf_who
     N = intensity.shape[1]
     # Number of time-points/gates
     nTG = 160
-    width = 0.075
+    #width = 0.075
+    width = 0.04
     
     time = np.array([np.arange(1,nTG+1,1)]) * width
     # Pre-allocate memory for each TPSF voxel
